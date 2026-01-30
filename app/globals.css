@@ -119,4 +119,10 @@
   body {
     @apply bg-background text-foreground;
   }
+  .preview-tabs-button {
+    @apply rounded-lg px-6 py-3 text-sm font-medium transition-colors  bg-gray-100 text-gray-700 hover:bg-gray-200 
+  }
+  .preview-tabs-images {
+    @apply relative mx-auto max-w-5xl overflow-hidden rounded-lg border border-gray-200 shadow-xl bg-white
+  }
 }
