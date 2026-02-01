@@ -11,10 +11,10 @@ const SignOutBtn = () => {
         className="bg-primary text-sm text-white"
         onClick={async () => {
             const result = await signOut();
-            if (result.data) {
+            if (result.data?.success) {
             router.push("/sign-in");
             } else {
-            alert("Error signing out");
+            alert(result.error?.message ?? "Error signing out");
             }
         }}
         >
