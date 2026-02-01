@@ -2,8 +2,8 @@ import { Briefcase } from "lucide-react"
 import Link from "next/link"
 import { Button } from "./ui/button"
 import { getSession } from "@/lib/auth/auth"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuLabel, DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu"
-import { Avatar, AvatarFallback } from "@radix-ui/react-avatar"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuLabel, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import SignOutBtn from "./SignOutBtn"
 
 const Navbar = async () => {
@@ -34,7 +34,7 @@ const Navbar = async () => {
                                 >
                                     <Avatar className="h-8 w-8 flex items-center justify-center">
                                         <AvatarFallback className=" text-white">
-                                            {session.user.name[0].toUpperCase()}
+                                            {session.user.name?.[0]?.toUpperCase() ?? "?"}
                                         </AvatarFallback>
                                     </Avatar>
                                 </Button>

@@ -82,7 +82,7 @@ const page = () => {
                             {loading ? "Signing in..." : "Sign In"}
                         </Button>
                         <p className="text-center text-sm text-gray-600">
-                            Don not have an account ?
+                            Don’t have an account?
                             <Link href="/sign-up" className="font-medium text-primary hover:underline"> Sign up</Link>
                         </p>
                     </CardFooter>
