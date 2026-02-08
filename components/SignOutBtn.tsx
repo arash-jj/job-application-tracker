@@ -3,7 +3,6 @@
 import { signOut } from "@/lib/auth/auth-client";
 import { DropdownMenuItem } from "./ui/dropdown-menu";
 import { useRouter } from "next/navigation";
-
 const SignOutBtn = () => {
     const router = useRouter();
     return (
