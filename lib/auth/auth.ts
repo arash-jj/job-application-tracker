@@ -16,6 +16,7 @@ export const auth = betterAuth({
     secret: process.env.BETTER_AUTH_SECRET!,
     baseURL: process.env.BETTER_AUTH_URL,
     database: mongodbAdapter(db, { client }),
+    session: {cookieCache: {enabled: true, maxAge: 60*60}},
     emailAndPassword: { enabled: true },
     databaseHooks: {
         user: {
