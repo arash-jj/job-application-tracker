@@ -244,7 +244,7 @@ async function seed() {
           boardId: board._id,
           userId: USER_ID,
           status: columnName.toLowerCase().replace(" ", "-"),
-          order: i,
+          order: i * 100,
         });
 
         column.jobApplications.push(jobApplication._id);
