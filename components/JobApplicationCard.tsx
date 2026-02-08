@@ -115,6 +115,7 @@ const JobApplicationCard = ({job ,columns, dragHandleProps} : JobApplicationCard
                             <a
                             href={job.jobUrl}
                             target="_blank"
+                            rel="noopener noreferrer"
                             className="inline-flex items-center gap-1 text-xs text-primary hover:underline mt-1"
                             onClick={(e) => e.stopPropagation()}
                             >
